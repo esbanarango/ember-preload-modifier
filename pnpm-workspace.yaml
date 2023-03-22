@@ -1,0 +1,3 @@
+packages:
+  - 'ember-preload-modifier'
+  - 'test-app'
