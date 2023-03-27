@@ -10,7 +10,7 @@
   "license": "MIT",
   "author": "Esteban Arango <marranoparael31@gmail.com>",
   "files": [
-    "addon-main.cjs",
+    "addon-main.js",
     "dist"
   ],
   "scripts": {
@@ -36,6 +36,7 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.17.0",
     "@babel/plugin-syntax-decorators": "^7.17.0",
+    "@babel/plugin-transform-typescript": "^7.21.3",
     "@babel/preset-typescript": "^7.18.6",
     "@embroider/addon-dev": "^3.0.0",
     "@glint/core": "^0.9.7",
@@ -87,8 +88,10 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs",
-    "app-js": {}
+    "main": "addon-main.js",
+    "app-js": {
+      "./modifiers/preload.js": "./dist/_app_/modifiers/preload.js"
+    }
   },
   "exports": {
     ".": "./dist/index.js",
@@ -96,7 +99,7 @@
       "types": "./dist/*.d.ts",
       "default": "./dist/*.js"
     },
-    "./addon-main.js": "./addon-main.cjs"
+    "./addon-main.js": "./addon-main.js"
   },
   "typesVersions": {
     "*": {
