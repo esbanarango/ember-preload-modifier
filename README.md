@@ -1,7 +1,8 @@
 ember-preload-modifier
 ==============================================================================
+[![CI](https://github.com/esbanarango/ember-preload-modifier/actions/workflows/ci.yml/badge.svg)](https://github.com/esbanarango/ember-preload-modifier/actions/workflows/ci.yml)
 
-[Short description of the addon.]
+Element modifier to simplify preloading routes.
 
 
 Compatibility
